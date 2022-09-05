@@ -359,6 +359,7 @@ const PostForm = () => {
                     formsubmit ? <div className="sucess">
                     <h2> Thank you for sharing your responses.</h2>
                     <h4> Kindly join the WhatsApp Group </h4>
+                    <p>testing</p>
                     <div className='whatsappLink'>
                         <div className='walogo'>
                             <Image src={walogo} layout='responsive' />
