@@ -729,26 +729,19 @@ const Eventdetail = ({ username }) => {
               <th>Username</th>
               
               <th>Question 1</th>
+              <th>Question 1 input</th>
               <th>Question 2</th>
-              {/* <th>Question 2 input</th> */}
               <th>Question 3</th>
               
               <th>Question 4</th>
-              {/* <th>Question 4 input</th> */}
              
               <th>Question 5</th>
-              {/* <th>Question 5 input</th> */}
              
             
               <th>Question 6</th>
-              <th>Question 7</th>
-              <th>Question 8</th>
 
               <th>Ph No.</th>
               <th>login time</th>
-              
-             
-              {/* <th>logout time</th> */}
             </tr>
           </thead>
           <tbody>
@@ -760,15 +753,15 @@ const Eventdetail = ({ username }) => {
                     <td>{key + 1}</td>
                     <td>{eventdata.username}</td>
                     <td>{eventdata.PreOneAns} </td>
+                    <td>{eventdata.PreOneInput} </td>
+                  
 
                     <td>{eventdata.PreTwoAns}</td>
 
-                    <td>{eventdata.PreThreeInput},{eventdata.PreThreeInput1}</td>
-
-                    <td>  {eventdata.PreFourAns && eventdata.PreFourAns.map((fourdata,i)=>{
+                    <td>  {eventdata.PreThreeAns && eventdata.PreThreeAns.map((threedata,i)=>{
                           return(
                             <ul  key={i} className='checkbox-data'>
-                               {fourdata.isChecked && fourdata.isChecked === true ? <li>{fourdata.name}</li>:null } 
+                               {threedata.isChecked && threedata.isChecked === true ? <li>{threedata.name}</li>:null } 
                               
                             </ul>
                           )
@@ -777,39 +770,14 @@ const Eventdetail = ({ username }) => {
                          
                         })}
                      </td>
+                    <td>{eventdata.PreFourAns}</td>
                     
                     
                     
                     <td>{eventdata.PreFiveAns}</td>
+                    <td>{eventdata.PreSixAns}</td>
                     
-                    <td>  {eventdata.PreSixAns && eventdata.PreSixAns.map((sixdata,i)=>{
-                          return(
-                            <ul  key={i} className='checkbox-data'>
-                               {sixdata.isChecked && sixdata.isChecked === true ? <li>{sixdata.name}</li>:null } 
-                              
-                            </ul>
-                          )
-                        
-                            
-                         
-                        })}
-                     </td>
-
-                     <td>  {eventdata.PreSevenAns && eventdata.PreSevenAns.map((sevendata,i)=>{
-                          return(
-                            <ul  key={i} className='checkbox-data'>
-                               {sevendata.isChecked && sevendata.isChecked === true ? <li>{sevendata.name}</li>:null } 
-                              
-                            </ul>
-                          )
-                        
-                            
-                         
-                        })}
-                     </td>
-
-
-                    <td>{eventdata.PreEightAns}</td>
+                    
 
                   
                     <td>{eventdata.phoneNum}</td>
