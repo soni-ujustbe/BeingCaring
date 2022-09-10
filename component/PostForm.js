@@ -395,7 +395,7 @@ const PostFormtwo = () => {
 
                             {/* 3rd question */}
                             <div className="form-row radio-buttons">
-                                <h2>3. After watching the Rapport Building session, which of the following areas you would need help from Nucleus team?   <sup>*</sup></h2>
+                                <h2>3. After watching the "How to connect with people effortlessly" session, which of the following areas you would need help from Nucleus team?   <sup>*</sup></h2>
                                 <ul>
 
                                     
@@ -474,7 +474,7 @@ const PostFormtwo = () => {
 
                              {/* 5th multiple check box */}
                              <div className="form-row radio-buttons">
-                                <h2>5. Can you help other Listed Partner to decorate his/her business profile in UjustBe App? <sup>*</sup></h2>
+                                <h2>5. Can you help other Listed Partner to decorate his/her business profile in UJustBe App? <sup>*</sup></h2>
                                 
                                 <ul>
                                     <li>
