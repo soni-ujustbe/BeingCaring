@@ -382,7 +382,7 @@ const UserProfile = ({ userprofiledetails }) => {
 
                         <div className='cardContent'>
                           <h3>{badges.isChecked && badges.isChecked === true ? "Honoured" : " U Just Missed"}</h3>
-                          <p>{badges.badgesdiscription}</p>
+                          {/* <p>{badges.badgesdiscription}</p> */}
                         </div>
 
                       </div>
